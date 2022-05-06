@@ -1,0 +1,47 @@
+
+<div class="d-flex align-items-center justify-content-center ">
+
+<div class="card col-md-11 mb-12 ">
+  <div class="card-header"><h4>Sign up</h4></div>
+  <div class="card-body">
+
+<br>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field field form-group col-md-5 mb-2">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" , class:"form-control",placeholder:'name@gmail.com'%>
+  </div>
+
+  <div class="field field form-group col-md-5 mb-2">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <!-- <em>(<%= @minimum_password_length %> characters minimum)</em> -->
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" , class:"form-control",placeholder:'Password minimum 6 characters ' %>
+  </div>
+
+  <div class="field field form-group col-md-5 mb-2">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control",placeholder:'Confirm Passsword' %>
+     <i class="fas fa-user"></i>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up", class:"btn btn-secondary" %>
+  </div>
+<% end %>
+
+
+  </div>
+</div>
+
+
+
+
+<br>
+    <em>Already have an account?<%= render "devise/shared/links" %></em>
+
+
+</div>

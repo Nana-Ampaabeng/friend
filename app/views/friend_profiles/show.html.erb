@@ -1,0 +1,21 @@
+
+<br>
+<div class="  col-md-10 mb-10 bg-secondary container-sm block">
+  <div class="card-body bg-light border">
+    <h1 class="display-2.5">Hello, <%= @friend_profile.first_name %>  <%= @friend_profile.last_name %>
+    
+  </h1>
+
+  <p class="lead">
+    <%= @friend_profile.email %> |
+  <%= @friend_profile.contact %> |
+ <%= @friend_profile.image %>
+  .</p>
+  <hr class="my-4">
+
+  <br>
+<%= link_to 'Edit', edit_friend_profile_path(@friend_profile), class:"btn btn-secondary"  %>
+<%= link_to 'Back', friend_profiles_path, class:"btn btn-dark" %>
+</div>
+  </div>
+  

@@ -1,0 +1,66 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<style>
+    .card {
+
+        width: 50rem;
+        height:18rem;
+        position:absolute;
+        top:150px;
+    }
+</style>
+<body> -->
+  
+<!--   
+  <div class="  align-items-center justify-content-center">
+      <div class="card bg-warning">
+          <h3>Login</h3> -->
+
+
+
+  <body class="active_admin logged_out new">
+    <div id="wrapper">
+    
+    <div id="content_wrapper">
+      <div class="flashes">
+      </div>
+      <div id="active_admin_content">
+        <div id="login">
+    <h2> Login</h2>
+    
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="container-sm">
+
+  <div class="field form-group col-md-5 mb-2 ">
+    <% f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+
+  </div>
+  <div class="field form-group col-md-5 mb-1 ">
+    <% f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password", class:"form-control "%>
+  </div>
+
+</div>
+
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field form-group col-md-2 mb-1">
+    <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in", class:"btn btn-primary" %>
+  </div>
+<% end%>
+
+
+    <em>Don't have an account?<%= render "devise/shared/links" %></em>
+</div>
+
+</div>
+</body>
+</html>

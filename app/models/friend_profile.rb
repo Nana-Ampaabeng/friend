@@ -1,0 +1,2 @@
+class FriendProfile < ApplicationRecord
+end
