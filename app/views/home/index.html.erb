@@ -1,4 +1,26 @@
 <style>
+h5 span{
+	color: #f7403b;
+  font-weight: bold;
+  font-family: "poppins";
+  font-size: 2em;
+  
+}
+h2 span{
+	color: rgb(226, 19, 19);
+  font-weight: bold;
+  font-family: "poppins";
+  font-size: 2em;
+  
+}
+ /* .card-title-about{
+  color: white;
+  background:wheat;
+  width:20em;
+  position: relative;
+  right: 30em;
+} */
+
   
   /* .card {
       width: 20rem;
@@ -37,24 +59,41 @@
 
 	.circle-wrap {
 	margin: 50px auto;
-	width: 200px;
-	height: 200px;
-	background: #e6e2e7;
-	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	background: whitesmoke;
+  border: 1px solid black;
+
+  border-radius: 100%;
 	}
   #circle-wrap {
 	margin: 50px auto;
-	width: 320px;
-	height: 320px;
+	width: 250px;
+	height: 250px;
 	background: #d8076f;
-	border-radius: 50%;
-	}
-    </style>
+	border-radius: 100%;
+  border: 2px solid white;
+
+}
+#circle-wrap2 {
+	margin: 50px auto;
+	width: 250px;
+	height: 250px;
+	background: yellow;
+	border-radius: 100%;
+  border: 2px solid white;
+}
+
+
+
+
+</style>
 
 
 
   
   
+</section>
 
      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -96,13 +135,15 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <section>
               <!--  End of carousel -->
-  
 
+                
+<br>
       
    <section>
-       <h2 style="color:fuchsia" class="d-flex align-items-center justify-content-center">Our Brand & It's Users feedback</h2>
-    <div class="row">  
+       <h2 style="color:rgb(236, 229, 236)" class="d-flex align-items-center justify-content-center"><span>O</span>ur Brand & Feedback</h2>
+    <div class="row bg-info mb-3 border-white overflow-visible ">  
     <div id="circle-wrap">
         <div id="circle">
         <div id="mask full">
@@ -114,18 +155,18 @@
         </div>
         </div>
         
-        <div id="circle-wrap">
-            <div id="circle">
-            <div id="mask full">
-              <div id="fill"></div>
+        <div class="circle-wrap">
+            <div class="circle">
+            <div class="mask full">
+              <div class="fill"></div>
             </div>
-            <div id="mask half">
-              <div id="fill"></div>
+            <div class="mask half">
+              <div class="fill"></div>
             </div>
         </div>
         </div>
 
-        <div id="circle-wrap">
+        <div id="circle-wrap2">
           <div id="circle">
           <div id="mask full">
             <div id="fill"></div>
@@ -140,47 +181,122 @@
       
     </div>
 
+  </section>
+  <br> 
+<section>
+  <h2 style="color:rgb(236, 229, 236)" class="d-flex align-items-center justify-content-center"><span>V</span>ission & Objective </h2>
 
-
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
+    <div class="row d-flex align-items-center justify-content-center  gx-5 px-2 overflow-hidden" >
+      <div class="col-sm-3  gx-5">
+        <div class="card text-center text-dark bg-warning mb-3 border-white">
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
+            <h5 class="card-title">Special title treatment1</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+            <a href="#" class="btn btn-outline-dark btn-sm">Read more</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="card">
+      <div class="col-sm-3">
+        <div class="card text-center text-white bg-success mb-3 border-white overflow-hidden">
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
+            <h5 class="card-title">Special title treatment2</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-footer overflow-hidden">
+              <small class="text-muted ">Last updated 5 mins ago</small>
+              <br>
+            </div>
+            <a href="#" class="btn btn-outline-primary btn-sm">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 hover">
+        <div class="card text-center text-white bg-danger mb-3 border-white">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment3</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 8 mins ago</small>
+              <br>
+            </div>
+            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+            
           </div>
         </div>
       </div>
     </div>
     
-<div class="card text-center" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+
+
     </section>
+    <br>
+<!-- <div>
+
+  
+  <div class="card text-center text-dark bg-info mb-3 border-white row-cols-md-1" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Special title treatment4</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>  <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
 
 
-
-
-
+<br>
 
     
       
+      </div> -->
 
 
 
 
+      
+      <br>
+      <section>
 
+       
+        <br>
+        <div class="card bg-dark text-white">
+          <%= image_tag("/assets/e.jpg", :class=>"card-img w-100")%> 
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <div>
+        <div class="card text-center">
+          <!-- <div class="card-header">
+            Featured
+          </div> -->
+          <div class="card-body">
+            <%= render(Primer::OcticonComponent.new(:"shield-check")) %>
+            <h5 class="card-title-about"><span>A</span>BOUT US</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Aliquid odit quaerat omnis sequi beatae nesciunt cupiditate reiciendis doloremque, quasi inventore, esse natus, ab deserunt vel quam minima labore nulla. 
+               Non.
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore assumenda, iure tempora ad facere magnam dicta eius ab optio dolore tenetur facilis deleniti ex cupiditate quisquam hic, recusandae a porro!
+            </p>
+            <%= link_to 'Read More ', home_about_path, class:"btn btn-outline-primary" %>
+
+          </div>
+          <div class="card-footer text-muted bg-dark">
+            Designed and built with all the love 
+            <i class="fa fa-copyright " aria-hidden="true">© 2022 Taskme, Inc.
+              Terms 
+              Privacy
+              Site Map
+              What is Taskme?</i>
+          </div>
+        </div>
+      </div>

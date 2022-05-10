@@ -29,6 +29,8 @@
 
             <div class="field form-group  ">
               <% f.label :email %><br />
+              <%= render(Primer::OcticonComponent.new(:"person", :height => 40) ) %>
+              
               <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
 
             </div>
@@ -37,6 +39,16 @@
               <%= f.password_field :password, autocomplete: "current-password", class:"form-control "%>
             </div>
 
+          </div>
+          <br>
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+            <div class="input-group">
+              <div class="input-group-text">
+              <%= render(Primer::OcticonComponent.new(:"person", :height => 40) ) %>
+              </div>
+              <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+            </div>
           </div>
           <br>
 
