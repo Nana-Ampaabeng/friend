@@ -13,89 +13,15 @@ h2 span{
   font-size: 2em;
   
 }
- /* .card-title-about{
-  color: white;
-  background:wheat;
-  width:20em;
-  position: relative;
-  right: 30em;
-} */
-
-  
-  /* .card {
-      width: 20rem;
-      height:18rem;
-      position:absolute;
-      top:30rem;
-      left: 0rem;
-    } */
-
-    
-	/* move the circle to  right to left */
-	/* .col-div-3{
-		width: 35em;
-		float: right;
-    position: relative;
-    top: 1em;
-    right:6rem ;
-	}   */
-
-/* #col-div-3{
-		width: 53em;
-		float: left;
-    position:absolute;
-    right: 30em;
-	}   */
-
-
-	/* move the circle to top and down */
-	/* .col-div-4{
-		width: 30%;
-		float: left; 
-	} */
-	.content-box{
-		padding: 20px;
-	}
-
-	.circle-wrap {
-	margin: 50px auto;
-	width: 250px;
-	height: 250px;
-	background: whitesmoke;
-  border: 1px solid black;
-
-  border-radius: 100%;
-	}
-  #circle-wrap {
-	margin: 50px auto;
-	width: 250px;
-	height: 250px;
-	background: #d8076f;
-	border-radius: 100%;
-  border: 2px solid white;
-
-}
-#circle-wrap2 {
-	margin: 50px auto;
-	width: 250px;
-	height: 250px;
-	background: yellow;
-	border-radius: 100%;
-  border: 2px solid white;
-}
-
-
-
-
 </style>
 
 
 
   
   
-</section>
 
-     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+     <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -119,7 +45,7 @@ h2 span{
           </div>
         </div>
         <div class="carousel-item" >
-        <%= image_tag("/assets/e.jpg", :class=>"d-block w-100")%> 
+        <%= image_tag("/assets/e.jpg", :class=>"d-block w-100 ")%> 
           <div class="carousel-caption d-none d-md-block">
             <em> <h1>Get notified when work happends</h1></em>
             <b>Some representative placeholder content for the third slide.</b>
@@ -135,53 +61,85 @@ h2 span{
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <section>
+  <br> <br><br>
+  <br> <br><br>
+  <br> <br><br>
+  <br> <br><br>
+  <br> <br><br>
               <!--  End of carousel -->
 
                 
 <br>
       
-   <section>
-       <h2 style="color:rgb(236, 229, 236)" class="d-flex align-items-center justify-content-center"><span>O</span>ur Brand & Feedback</h2>
-    <div class="row bg-info mb-3 border-white overflow-visible ">  
-    <div id="circle-wrap">
-        <div id="circle">
-        <div id="mask full">
-          <div id="fill"></div>
-        </div>
-        <div id="mask half">
-          <div id="fill"></div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="circle-wrap">
-            <div class="circle">
-            <div class="mask full">
-              <div class="fill"></div>
-            </div>
-            <div class="mask half">
-              <div class="fill"></div>
-            </div>
-        </div>
-        </div>
 
-        <div id="circle-wrap2">
-          <div id="circle">
-          <div id="mask full">
-            <div id="fill"></div>
-          </div>
-          <div id="mask half">
-            <div id="fill"></div>
-          </div>
-      </div>
-      </div>
-      
-      
-      
-    </div>
+  <section>
+		<div class="container">
+			<div class="row justify-content-center">
+<div class="col-md-4">
+	<div class="card shadow" style="width: 20rem">
+		<div class="inner">
+	<%= image_tag("/assets/3.jpg", :class=>"d-block w-10 card-img-top")%> 
+		</div>
 
-  </section>
+	<div class="card-body text-center">
+		<h5 class="card-title">Design</h5>
+		<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque error consectetur aliquam! Sunt harum sit beatae deleniti dicta omnis ducimus dignissimos ipsum ad modi accusamus non sint, temporibus incidunt voluptate!</p>
+		<a href="#" class="btn btn-outline-warning">Learn More...</a>
+	</div>
+	</div>
+</div>
+<div class="col-md-4">
+	<div class="card shadow" style="width: 20rem">
+		<div class="inner">	
+	<%= image_tag("/assets/2.png", :class=>"d-block w-20 card-img-top")%> 
+		</div>
+		<div class="card-body text-center">
+			<h5 class="card-title">Responsive</h5>
+			<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque error consectetur aliquam! Sunt harum sit beatae deleniti dicta omnis ducimus dignissimos ipsum ad modi accusamus non sint, temporibus incidunt voluptate!</p>
+			<a href="#" class="btn btn-outline-primary">Learn More...</a>
+		</div>
+		</div>
+</div>
+<div class="col-md-4">
+	<div class="card shadow" style="width: 20rem">
+		<div class="inner">
+	<%= image_tag("/assets/2.png", :class=>"d-block w-10 card-img-top")%> 
+
+			<!-- <img class="card-img-top" src="" alt="card image cap"> -->
+
+		</div>
+		<div class="card-body text-center">
+			<h5 class="card-title">UI/UX</h5>
+			<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque error consectetur aliquam! Sunt harum sit beatae deleniti dicta omnis ducimus dignissimos ipsum ad modi accusamus non sint, temporibus incidunt voluptate!</p>
+			<a href="#" class="btn btn-outline-danger">Read More...</a>
+		</div>
+		</div>
+</div>
+			</div>
+		</div>
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <br> 
 <section>
   <h2 style="color:rgb(236, 229, 236)" class="d-flex align-items-center justify-content-center"><span>V</span>ission & Objective </h2>

@@ -1,4 +1,7 @@
 
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
 <div class="d-flex align-items-center justify-content-center ">
 <div class="card col-md-11 mb-12 ">
   <div class="card-header"><h4>Sign up</h4></div>
@@ -9,14 +12,17 @@
       </div>
       <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
       <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
-      <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+
+
+      <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">
+        3
+        <!-- <%= f.password_field :password, autocomplete: "new-password" , class:"form-control",placeholder:'Password minimum 6 characters ' %> -->
+    
+    </button>
     </div>
     <br>
     
 <br>
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
   <div class="field field form-group col-md-5 mb-2">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" , class:"form-control",placeholder:'name@gmail.com'%>

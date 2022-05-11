@@ -12,6 +12,8 @@
                   left: 25rem;
                   bottom: 100px;
               }
+ body {background:-webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+ }
           </style>
 
 
@@ -27,31 +29,30 @@
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="container-sm">
 
-            <div class="field form-group  ">
-              <% f.label :email %><br />
-              <%= render(Primer::OcticonComponent.new(:"person", :height => 40) ) %>
-              
-              <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
-
-            </div>
-            <div class="field form-group">
-              <% f.label :password %><br />
-              <%= f.password_field :password, autocomplete: "current-password", class:"form-control "%>
-            </div>
-
-          </div>
-          <br>
+      
+        
           <div class="col-auto">
-            <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+            <label class="visually-hidden" for="autoSizingInputGroup"></label>
             <div class="input-group">
               <div class="input-group-text">
               <%= render(Primer::OcticonComponent.new(:"person", :height => 40) ) %>
               </div>
-              <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+
+              <!-- <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username"> -->
             </div>
+
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingInputGroup"></label>
+              <div class="input-group">
+                <div class="input-group-text">
+                <%= render(Primer::OcticonComponent.new(:"person", :height => 40) ) %>
+                </div>
+              <%= f.password_field :password, autocomplete: "current-password", class:"form-control "%>
+              </div
           </div>
           <br>
-
+<!-- todo -->
             <% if devise_mapping.rememberable? %>
               <div class="">
               <%= f.check_box :remember_me %>
